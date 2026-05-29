@@ -71,7 +71,7 @@ user_current_lecture: dict[int, int] = {}
 user_lecture_sessions: dict[int, dict] = {}
 user_progress: dict[int, int] = {}
 
-
+# Вопросы для тестов по лекциям должны быть связаны с конкретными лекциями через поле "lecture_id" в вопросе.
 def load_questions() -> list[dict]:
     if DATA_FILE.exists():
         try:
