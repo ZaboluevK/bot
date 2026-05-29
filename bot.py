@@ -261,7 +261,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         text += "\nАдмин-команды:\n/add_question - добавить вопрос\n/edit_question - редактировать вопрос\n/list_questions - показать список вопросов\n/upload_lecture - загрузить видео-лекцию\n/import_questions - импортировать тесты из questions.txt\n"
 
     reply_markup = build_lectures_keyboard(update.effective_user.id)
-    await update.message.reply_text(text, reply_markup=reply_markup)
+    with open("welcome_image.jpg", "rb") as img:
+        await update.message.reply_photo(photo=img,
+                                        caption=text,
+                                        reply_markup=reply_markup)
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
