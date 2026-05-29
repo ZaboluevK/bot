@@ -255,7 +255,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         "📓Изучайте теорию - короткие понятные уроки.\n"
         "🎯Применяйте знания на практике - отвечайте на вопросы.\n\n"
         "Готовы сделать первый шаг к безопасности? Жмите на кнопку ниже и начинайте обучение!\n\n"
-        "❓Задать вопрос можно тут - @SafeStepFeedback_bot"
+        "❓Задать вопрос можно тут - @SafeStepTicketsbot"
     )
     if is_admin(update.effective_user.id):
         text += "\nАдмин-команды:\n/add_question - добавить вопрос\n/edit_question - редактировать вопрос\n/list_questions - показать список вопросов\n/upload_lecture - загрузить видео-лекцию\n/import_questions - импортировать тесты из questions.txt\n"
