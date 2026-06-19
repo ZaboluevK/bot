@@ -133,7 +133,3 @@ tgbot/
 ## 📞 Контакты
 
 Для вопросов и предложений: [@SafeStepTicketsbot](https://t.me/SafeStepTicketsbot)
-
-## 📄 Лицензия
-
-MIT License
